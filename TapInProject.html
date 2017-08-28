@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>waterflow</title>
+
+<!--script in js-->
+  <script src="js.js">
+  </script>
+
+<!-- My Script-->
+<script>
+    $(document).ready(function(){
+          $(".cap").on({
+                 click:  function(){
+   
+                        $(".c").slideDown(3000);
+                        $(".inwater").fadeIn(1000);
+                        <!--$(".inwater").animate({bottom:'100px'});-->
+                        $(".water").slideDown();
+                        $(".water").fadeOut(3900);
+   
+                 },
+                 mouseenter: function(){
+                        $(".c").stop();
+                        $(".water").hide();
+                 }
+
+           });
+});
+
+</script>
+
+<!--My Style-->
+<style>
+   body
+   {
+           background-image:url("backgr.jpg");
+           background-size:100% 100%;
+    }
+
+      .a
+        { 
+               width:200px;
+               height:300px;
+               border:3px solid black;
+               border-radius:30px 30px 0 0;
+               background-color:#00FFFF;
+        }
+
+
+    .handle
+    {
+              width:135px;
+              height:20px;
+              border-top:20px solid #9E0303;
+              border-right:20px solid #9E0303;
+              position:absolute;
+              left:212px;
+              top:294px;
+     }
+
+
+    .c
+    {
+            width:200px;
+            height:300px;
+            border-radius:27px 27px 0 0;
+            background-color:white; 
+            position:absolute;
+            left:11px;
+            top:11px;
+            display:none;
+  
+    }
+
+
+    .bucket
+    {
+            width:150px;
+            height:130px;
+            border-left:2px solid black;
+            border-bottom:2px solid black;
+            border-right:2px solid black;
+            position:absolute;
+            left:280px;
+            top:478px;
+            border-radius:0 0 20px 20px;
+     }
+
+
+     .inwater
+     {
+            width:149px;
+            height:50px;
+            left:280px; 
+            background-color:#00FFFF;
+            position:relative;
+            bottom:-244px;
+            left:275px;
+            border-radius:0 0 18px 18px;
+            display:none;
+     }
+     .water
+     {
+            width:15px;
+            height:270px;
+            background-color:#00FFFF;
+            position:absolute;
+            left:350px;
+            top:334px;
+            display:none;
+     }
+     .tap
+     {
+            width:15px;
+            height:10px;
+            background-color:#9E0303;
+            position:absolute;
+            left:352px;
+            top:285px;
+     }
+    .cap
+    {
+            width:45px;
+            height:20px;
+            background-color:red;
+            position:absolute;
+            left:335px;
+            top:265px;
+     }
+
+
+</style>
+</head>
+<!-- My Body Part-->
+<body>
+     <div class="a">
+     </div>
+
+           <div class="c">
+           </div>
+
+                <div class="bucket">
+                </div>
+
+                      <div class="cap">
+                      </div>
+
+                           <div class="iicap">
+                           </div>
+
+                                  <div class="tap">
+                                  </div>
+
+                                       <div class="handle">
+                                       </div>
+
+                                            <div class="handle1">
+                                            </div>
+
+                                                 <div class="inwater">
+                                                 </div>
+
+                                                      <div class="water">
+                                                      </div>
+
+</body>
+</html>
